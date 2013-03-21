@@ -1,6 +1,13 @@
 #!/usr/bin/env ruby
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require 'codebreaker'
+require 'pp'
 
 game = Codebreaker::Game.new(STDOUT)
-game.start
+begin
+game.start('1234')
+rescue Exception => e
+  pp e.backtrace[0..5]
+  raise e
+end
+

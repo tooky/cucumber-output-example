@@ -10,7 +10,10 @@ GEM
     diff-lcs (1.2.1)
     gherkin (2.11.6)
       json (>= 1.7.6)
+    gherkin (2.11.6-java)
+      json (>= 1.7.6)
     json (1.7.7)
+    json (1.7.7-java)
     rspec (2.13.0)
       rspec-core (~> 2.13.0)
       rspec-expectations (~> 2.13.0)
@@ -21,6 +24,7 @@ GEM
     rspec-mocks (2.13.0)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
